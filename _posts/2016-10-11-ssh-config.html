@@ -1,0 +1,22 @@
+---
+layout: main
+title: "SSH Config"
+---
+<p>
+    By default, SSH has a tendency to focus on usability over privacy. When connecting to an unknown server, it will iterate over all of your keys, trying each one until it gets one that works. This can cause identity leaks (see <a href="https://news.ycombinator.com/item?id=10004678">here</a> for an example of this behavior). This ssh config prevents such leaks and allows easy adding of services without requiring a config edit each time.
+    <br>
+    <br>
+    To add a new service, create a new key with the filename of <span class="code">~/.ssh/id_USERNAME-HOSTNAME</span>. The config will instruct ssh to automatically use such found keys.
+    <div class="code">
+
+        <h4>~/.ssh/config</h4>
+        <hr>
+        <pre>
+IdentitiesOnly=yes
+
+Host *.*
+    IdentityFile ~/.ssh/id_%r-%h
+    ServerAliveInterval 300
+    ServerAliveCountMax 3</pre>
+    </div>
+</p>

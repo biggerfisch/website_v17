@@ -8,13 +8,16 @@ title: Home
 <p>
     <h4>Posts</h4>
     <ul>
-        <li><a href="/posts/ssh-config/">SSH Config</a></li>
-        <li><a href="/posts/simple_print_server">Simple Print Server</a></li>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
     </ul>
 </p>
 
 <p>
-    <h3>Other sites</h3>
+    <h3>Other friends' sites</h3>
     <ul class="other-sites-list">
         <li class="other-sites-item"><a class="other-sites-link" href="https://www.kyleniewiada.org/">Kyle Niewiada</a></li>
     </ul>
