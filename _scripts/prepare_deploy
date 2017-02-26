@@ -1,0 +1,6 @@
+#!/bin/sh
+
+TAR_FILENAME="site_to_deploy.tar.xz"
+CHECKSUM_FILENAME="$TAR_FILENAME.sha256sum"
+
+tar cJf $TAR_FILENAME _site/ && sha256sum -b $TAR_FILENAME > $CHECKSUM_FILENAME
