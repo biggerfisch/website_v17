@@ -1,3 +1,5 @@
 timezone: America/Detroit
 
 permalink: pretty
+
+exclude: [vendor]

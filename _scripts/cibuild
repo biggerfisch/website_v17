@@ -1,0 +1,3 @@
+bundle install --deployment
+bundle exec jekyll build
+bundle exec htmlproofer ./_site --http_status_ignore 999 --enforce_https
