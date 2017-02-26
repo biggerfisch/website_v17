@@ -28,8 +28,9 @@ task :html_proofer do
     # check_html: 'true', # Removed due to fail on p end tags w/ no way to not
     check_opengraph: 'true',
     enforce_https: 'true',
+    url_swap: { 'www.averyjfischer.com' => '' }, # Fixes internal links checks.
     http_status_ignore: [999], # `999 No Error` from LinkedIn
-    internal_domains: ['www.averyjfischer.com'],
+    internal_domains: ['www.averyjfischer.com', 'averyjfischer.com'],
     url_ignore:
     [
     ]
