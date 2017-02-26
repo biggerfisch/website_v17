@@ -21,6 +21,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - deploy
 
 gems:
   - jekyll-seo-tag
