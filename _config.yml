@@ -2,4 +2,16 @@ timezone: America/Detroit
 
 permalink: pretty
 
-exclude: [vendor]
+exclude: 
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-tidy
+
+jekyll-tidy:
+  compress_html: False
