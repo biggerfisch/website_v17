@@ -1,6 +1,20 @@
 timezone: America/Detroit
-
+title: "Avery J Fischer"
+description: "Avery J Fischer's personal site and blog"
+url: "www.averyjfischer.com"
 permalink: pretty
+
+author:
+  twitter: The_Biggerfisch
+twitter:
+  username: The_Biggerfisch
+social:
+  name: Avery Fischer
+  links:
+    - https://twitter.com/The_Biggerfisch
+    - https://www.linkedin.com/in/averyjfischer
+    - https://github.com/biggerfisch
+    - https://keybase.io/biggerfisch
 
 exclude: 
   - vendor
