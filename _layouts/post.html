@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    {% include header.html %}
+    <body>
+        {% include nav.html %}
+        <div class="main">
+            <h2> {{ page.title }} - {{ page.date | date: '%B %d, %Y' }}</h2>
+            <hr/>
+            {{ content }}
+		</div>
+	</body>
+</html>
+
