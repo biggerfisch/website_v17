@@ -6,5 +6,5 @@ CHECKSUM_FILENAME="$TAR_FILENAME.sha256sum"
 scp deploy/$TAR_FILENAME deploy/$CHECKSUM_FILENAME avery@averyjfischer.com:~/website_deploy/
 
 ssh avery@averyjfischer.com '
-cd website_deploy && sha256sum -c site_to_deploy.tar.xz.sha256sum && tar xJf site_to_deploy.tar.xz && mv /srv/http/website_17/_site /srv/http/website_17/_site_old && mv _site /srv/http/website_17/_site && echo Done
+cd website_deploy && sha256sum -c site_to_deploy.tar.xz.sha256sum && tar xJf site_to_deploy.tar.xz && rm -r /srv/http/website_17/_site_old && mv /srv/http/website_17/_site /srv/http/website_17/_site_old && mv _site /srv/http/website_17/_site && echo Done
 '
