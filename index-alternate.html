@@ -1,0 +1,24 @@
+---
+layout: main-alternate
+title: Home
+---
+
+<p>Click a link above or below.</p>
+
+<p>
+    <h4>Posts</h4>
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</p>
+
+<p>
+    <h3>Other friends' sites</h3>
+    <ul class="other-sites-list">
+        <li class="other-sites-item"><a class="other-sites-link" href="https://www.kyleniewiada.org/">Kyle Niewiada</a></li>
+    </ul>
+</p>
