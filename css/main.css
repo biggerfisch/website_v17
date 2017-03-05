@@ -1,3 +1,15 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #effaff;
+    display: flex;
+    flex-direction: column;
+    margin:0; 
+}
+
 a {
 	text-decoration: none;
 	color: #4444AA;
@@ -6,6 +18,10 @@ a {
 a:hover {
 	text-decoration: underline;
 	color: black;
+}
+
+.left-nav {
+    margin: 0.5em;
 }
 
 .navbar {
@@ -50,12 +66,17 @@ a:hover {
 }
 
 .main {
-	width: auto;
-	max-width: 40rem;
-	margin-top: 1rem;
+    width: 40em;
+	margin-top: 0em;
+    margin-bottom: 0.5em;
 	margin-left: auto;
 	margin-right: auto;
+    padding: 1em;
+    padding-top: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    flex:1;
 }
 
 .code {
