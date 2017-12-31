@@ -1,7 +1,7 @@
 timezone: America/Detroit
 title: "Avery J Fischer"
 description: "Avery J Fischer's personal site and blog"
-url: "www.averyjfischer.com"
+url: "https://www.averyjfischer.com"
 permalink: pretty
 
 author:
@@ -22,6 +22,7 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - deploy
+  - Dockerfile
 
 gems:
   - jekyll-seo-tag
