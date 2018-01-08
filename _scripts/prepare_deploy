@@ -1,7 +1,3 @@
 #!/bin/sh
 
-TAR_FILENAME="site_to_deploy.tar.xz"
-CHECKSUM_FILENAME="$TAR_FILENAME.sha256sum"
-
-bundle exec jekyll build
-tar cJf deploy/$TAR_FILENAME _site/ && cd deploy && sha256sum -b $TAR_FILENAME > $CHECKSUM_FILENAME
+docker build -t biggerfisch/website . && docker push biggerfisch/website
