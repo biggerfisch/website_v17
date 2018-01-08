@@ -24,7 +24,7 @@ exclude:
   - deploy
   - Dockerfile
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-tidy
