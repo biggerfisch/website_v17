@@ -11,7 +11,7 @@ I learned with it it though:
 ---
 
 I've been dabbling with 3D printers for a while now, but I've only recently
-acquired my own, a [Monoprice Mini Delta](https://mpminidelta.monoprice.com/).
+acquired my own, a [Monoprice Mini Delta](https://www.monoprice.com/product?p_id=21666).
 
 It's a cheap, but decently solid printer, especially for the price point. It
 took some modification to really get it working the way I wanted, but I'll cover
