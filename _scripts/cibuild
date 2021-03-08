@@ -1,3 +1,4 @@
 gem install bundler
-bundle install --deployment
+bundle config set --local deployment 'true'
+bundle install
 bundle exec rake test
