@@ -1,5 +1,5 @@
 FROM jekyll/builder:latest as build
-LABEL maintainer="biggerfisch@gmail.com"
+LABEL maintainer="avery+website@averyjfischer.com"
 
 # Adding these first allows the install to be cached as a layer
 RUN bundle config set --local deployment 'true'
