@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'English'
 require 'html-proofer'
 require 'rubocop/rake_task'
@@ -7,10 +9,10 @@ task :build, [:options] do |_t, args|
   # Build twice to handle FastImage issue of non-existent images on init build
   puts 'Building site...'.yellow.bold
   args.with_defaults(options: {})
-  orig_stdout = STDOUT.clone
-  STDOUT.reopen('/dev/null', 'w')
+  orig_stdout = $stdout.clone
+  $stdout.reopen('/dev/null', 'w')
   Jekyll::Commands::Build.process({})
-  STDOUT.reopen(orig_stdout)
+  $stdout.reopen(orig_stdout)
   Jekyll::Commands::Build.process(args[:options])
 end
 
