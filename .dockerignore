@@ -1,4 +1,6 @@
 .git
 vendor/bundle/**/*
 vendor/bundle
+vendor/
+_site/
 **/.*.swp

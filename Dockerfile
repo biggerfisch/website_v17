@@ -1,10 +1,10 @@
-FROM jekyll/builder as build
+FROM jekyll/builder:latest as build
 LABEL maintainer="biggerfisch@gmail.com"
 
 # Adding these first allows the install to be cached as a layer
+RUN bundle config set --local deployment 'true'
 ADD Gemfile Gemfile.lock _config.yml /srv/jekyll/
 WORKDIR /srv/jekyll
-RUN bundle install
 
 ADD . /srv/jekyll
 
