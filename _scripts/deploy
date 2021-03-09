@@ -1,5 +1,5 @@
 #!/bin/sh
 
 ssh avery@averyjfischer.com '
-docker stop $(docker ps --filter "ancestor=biggerfisch/website" --format "{{.ID}}") && docker pull biggerfisch/website && docker run -d -p 3000:3000 --restart always biggerfisch/website
+docker stop $(docker ps --filter "ancestor=biggerfisch/website" --format "{{.ID}}") && docker pull biggerfisch/website:latest && docker run -d -p 3000:3000 --restart always biggerfisch/website:latest
 '
