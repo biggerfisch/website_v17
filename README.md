@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/biggerfisch/website_v17.svg?branch=master)](https://travis-ci.org/biggerfisch/website_v17)
+[![Tests](https://github.com/biggerfisch/website_v17/actions/workflows/tests.yml/badge.svg)](https://github.com/biggerfisch/website_v17/actions/workflows/tests.yml)
 
 # AveryJFischer.com
 
