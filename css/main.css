@@ -7,6 +7,7 @@ html, body {
 
 body {
     background-color: #effaff;
+    font-size: 120%;
 }
 
 a {
@@ -57,7 +58,7 @@ a.nav-link, a.nav-link:visited {
     display: block;
     text-decoration: none;
     color: #0055AA;
-    width: 6rem;
+    width: 7rem;
 }
 
 a.nav-link:hover {
@@ -111,7 +112,7 @@ a.nav-link:hover {
     max-width: 350px;
 }
 
-@media only screen and (max-device-width: 750px) {
+@media only screen and (max-device-width: 768px) {
     body {
         font-size: 250%;
     }
