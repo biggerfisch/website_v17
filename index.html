@@ -10,9 +10,7 @@ If you'd like more info about me, please check out my <a href="{% link about-me/
     <h4>Posts</h4>
     <ul>
         {% for post in site.posts %}
-        <li class="link-list">
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
+            {% include post-summary.html %}
         {% endfor %}
     </ul>
 </p>

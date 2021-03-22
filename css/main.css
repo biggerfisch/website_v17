@@ -117,6 +117,17 @@ a.nav-link:hover {
     max-width: 350px;
 }
 
+.post-summary-entry {
+    list-style: none;
+    display: table;
+    margin: 1em 0 1em 0;
+}
+
+.link-post-title {
+    font-size: 125%;
+    font-weight: bold;
+}
+
 @media only screen and (max-device-width: 768px) {
     body {
         font-size: 150%;
@@ -216,5 +227,9 @@ a.nav-link:hover {
 
     .link-list {
         margin: 0 0 1.5em 0;
+    }
+
+    .post-summary {
+        padding: 0;
     }
 }
