@@ -4,15 +4,8 @@ title: Home
 sitemap: false
 ---
 
-<p>Click a link above or below.</p>
+<p>Hi, I'm Avery. I'm a software engineer and physicist, currently working for <a href="https://enviosystems.com/">Envio Systems</a>.
+If you'd like more info about me, please check out my <a href="{% link about-me/index.html %}">About Me page</a>. If you have a project or opportunity you'd like to talk to me about, please see my <a href="{% link contact-me/index.html %}">Contact Me page</a>.</p>
 
-<p>
-    <h4>Posts</h4>
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</p>
+<h3>Posts</h3>
+{% include post-summary.html %}

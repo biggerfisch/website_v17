@@ -26,15 +26,27 @@ task :html_proofer do
   puts 'Running html proofer...'.yellow.bold
   HTMLProofer.check_directory(
     '_site/',
-    allow_hash_href: 'true',
-    # check_html: 'true', # Removed due to fail on p end tags w/ no way to not
-    check_opengraph: 'true',
-    enforce_https: 'true',
-    # Fixes internal links checks.
-    url_swap: { 'https://www.averyjfischer.com' => '' },
-    http_status_ignore: [999], # `999 No Error` from LinkedIn
-    internal_domains: ['www.averyjfischer.com', 'averyjfischer.com'],
-    url_ignore: []
+    {
+      check_html: 'true',
+      check_opengraph: 'true',
+      enforce_https: 'true',
+      check_external_hash: 'true',
+      check_favicon: 'true',
+      check_img_http: 'true', # Fails http images
+      validation: {
+        report_eof_tags: 'true',
+        report_invalid_tags: 'true',
+        report_mismatched_tags: 'true',
+        report_missing_doctype: 'true',
+        report_missing_names: 'true',
+        report_script_embeds: 'true'
+      },
+      # Fixes internal links checks.
+      url_swap: { 'https://www.averyjfischer.com' => '' },
+      http_status_ignore: [999], # `999 No Error` from LinkedIn
+      internal_domains: ['www.averyjfischer.com', 'averyjfischer.com'],
+      url_ignore: []
+    }
   ).run
 end
 

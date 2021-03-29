@@ -7,16 +7,17 @@ title: "SSH Config"
     <br>
     <br>
     To add a new service, create a new key with the filename of <span class="code">~/.ssh/id_USERNAME-HOSTNAME</span>. The config will instruct ssh to automatically use such found keys.
-    <div class="code">
+</p>
 
-        <h4>~/.ssh/config</h4>
-        <hr>
-        <pre>
+<div class="code">
+
+    <h4>~/.ssh/config</h4>
+    <hr>
+    <pre>
 IdentitiesOnly=yes
 
 Host *.*
     IdentityFile ~/.ssh/id_%r-%h
     ServerAliveInterval 300
     ServerAliveCountMax 3</pre>
-    </div>
-</p>
+</div>
