@@ -7,10 +7,6 @@ title: Home
 If you'd like more info about me, please check out my <a href="{% link about-me/index.html %}">About Me page</a>. If you have a project or opportunity you'd like to talk to me about, please see my <a href="{% link contact-me/index.html %}">Contact Me page</a>.</p>
 
 <p>
-    <h4>Posts</h4>
-    <ul>
-        {% for post in site.posts %}
-            {% include post-summary.html %}
-        {% endfor %}
-    </ul>
+    <h3>Posts</h4>
+    {% include post-summary.html %}
 </p>

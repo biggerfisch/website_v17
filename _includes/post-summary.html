@@ -1,3 +1,7 @@
-<li class="post-summary-entry">
-    <a href="{{ post.url }}" class="link-post-title">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
-</li>
+<ul class="post-summary">
+    {% for post in site.posts %}
+        <li class="post-summary-entry">
+            <a href="{{ post.url }}" class="link-post-title">{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
