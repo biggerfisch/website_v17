@@ -20,14 +20,6 @@ a:hover {
     color: black;
 }
 
-.other-sites-list {
-
-}
-
-.other-sites-item {
-    list-style-type: square;
-}
-
 .nav {
     background-color: #EEEEFF;
     border: 1px solid black;
