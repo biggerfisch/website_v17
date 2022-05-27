@@ -7,6 +7,7 @@ gem 'jekyll'
 gem 'nokogiri'
 gem 'rake'
 gem 'rubocop'
+gem 'webrick'
 
 group :jekyll_plugins do
   gem 'jekyll-compose'
