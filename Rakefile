@@ -43,7 +43,8 @@ task :html_proofer do
       },
       # Fixes internal links checks.
       url_swap: { 'https://www.averyjfischer.com' => '' },
-      http_status_ignore: [999], # `999 No Error` from LinkedIn
+      ignore_status_codes: [999], # `999 No Error` from LinkedIn
+      ignore_urls: [/docnetwork.org/], # Time outs; assume possible filtering from datacenter IPs?
       internal_domains: ['www.averyjfischer.com', 'averyjfischer.com'],
       url_ignore: []
     }
